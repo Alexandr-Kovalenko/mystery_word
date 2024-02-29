@@ -1,0 +1,40 @@
+.hero-section {
+  max-width: 1440px;
+  margin: 0 auto auto;
+
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 72px;
+      margin: 24px 0;
+    }
+  }
+
+  &__text {
+    margin: 12px 0;
+    text-align: center;
+    font-size: 24px;
+    color: blue;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      margin: 16px 0;
+    }
+  }
+
+  &__word-block {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: 600;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 102px;
+      margin: 20px 0 48px 0;
+      font-weight: 500;
+    }
+  }
+}

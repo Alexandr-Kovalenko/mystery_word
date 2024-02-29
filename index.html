@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="body">
+    <section class="hero-section">
+      <h1 class="hero-section__title">Відгадай слово</h1>
+      <h2 class="hero-section__text">
+        Кількість спроб: <span id="attempts"></span>
+      </h2>
+      <span id="attempts"></span>
+      <div class="hero-section__word-block" id="word"></div>
+      <ul class="buttons">
+        <li class="buttons__item">а</li>
+        <li class="buttons__item">б</li>
+        <li class="buttons__item">в</li>
+        <li class="buttons__item">г</li>
+        <li class="buttons__item">д</li>
+        <li class="buttons__item">е</li>
+        <li class="buttons__item">є</li>
+        <li class="buttons__item">ж</li>
+        <li class="buttons__item">з</li>
+        <li class="buttons__item">и</li>
+        <li class="buttons__item">і</li>
+        <li class="buttons__item">ї</li>
+        <li class="buttons__item">й</li>
+        <li class="buttons__item">к</li>
+        <li class="buttons__item">л</li>
+        <li class="buttons__item">м</li>
+        <li class="buttons__item">н</li>
+        <li class="buttons__item">о</li>
+        <li class="buttons__item">п</li>
+        <li class="buttons__item">р</li>
+        <li class="buttons__item">с</li>
+        <li class="buttons__item">т</li>
+        <li class="buttons__item">у</li>
+        <li class="buttons__item">ф</li>
+        <li class="buttons__item">х</li>
+        <li class="buttons__item">ц</li>
+        <li class="buttons__item">ч</li>
+        <li class="buttons__item">ш</li>
+        <li class="buttons__item">щ</li>
+        <li class="buttons__item">ь</li>
+        <li class="buttons__item">ю</li>
+        <li class="buttons__item">я</li>
+      </ul>
+
+      <div class="unsuccesfully is-hidden">
+        <div class="modal">
+          <p class="modal__title">
+            Нажаль закінчились спроби і Ви не змогли відгадати слово:
+            <span class="mystery-word"></span>
+          </p>
+          <button
+            type="button"
+            class="modal__button"
+            id="unsuccesfully__button"
+          >
+            нова гра
+          </button>
+        </div>
+      </div>
+
+      <div class="succes is-hidden">
+        <div class="modal">
+          <p class="modal__title">Вітаю, Ви вгадали слово! Так тримати!</p>
+          <button type="button" class="modal__button" id="succes__button">
+            ОК
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
